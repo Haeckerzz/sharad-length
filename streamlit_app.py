@@ -32,10 +32,10 @@ st.markdown(
 )
 
 stock_length = st.number_input(
-    "Enter stock bar length", value=100.00, min_value=0.1, format="%.2f")
+    "Enter stock bar length", value=70.00, min_value=0.1, format="%.2f")
 cut_lengths_input = st.text_area(
     "Enter required cut lengths (comma-separated)",
-    value="43.00, 43.00, 43.00, 43.00, 42.50, 42.50, 35.30, 35.30, 35.30, 35.30, 35.00, 35.00, 35.00, 33.30, 33.30, 29.00, 29.00, 25.00, 25.00"
+    value="43.00, 42.50, 35.30, 29.00, 29.00, 25.00, 25.00"
 )
 
 if st.button("Calculate Cutting Plan"):
@@ -50,7 +50,7 @@ if st.button("Calculate Cutting Plan"):
             bars = minimal_waste_bar_cut(stock_length, required_lengths)
             total_waste = 0
 
-            with st.expander("Click to view detailed breakdown (closed by default)", expanded=False):
+            with st.expander("View detailed breakdown", expanded=False):
                 for idx, bar in enumerate(bars, 1):
                     bar_sum = sum(bar)
                     waste = stock_length - bar_sum
