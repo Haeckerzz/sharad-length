@@ -4,7 +4,8 @@ A simple Streamlit app to calculate the optimal way to cut stock bars into requi
 
 This app helps users input a stock bar length and a list of required cut lengths, then calculates a cutting plan that minimizes wastage. It's useful for manufacturing, construction, and other fields where material optimization is important.
 
-<img width="1170" height="2532" alt="cutting streamlit app_(iPhone 12 Pro)" src="https://github.com/user-attachments/assets/53d6022f-484d-4e22-8897-32d382916114" />
+<img width="1170" height="2532" alt="cutting streamlit app_(iPhone 12 Pro) (1)" src="https://github.com/user-attachments/assets/ba4119ab-2ece-4f77-b6a9-0f38c1e54fdf" />
+
 
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cutting.streamlit.app/)
